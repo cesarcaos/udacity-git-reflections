@@ -9,4 +9,20 @@ How is the staging area different from the working directory and the repository?
 	The staging area is an intermediate place between the working directory and the repository itself. It contains the
 	files present in the working directory that someone wants to commit to the directory. In this way, a commit 
 	contains all the files that represent the logical change. Otherwise, each file would be commited separetely, 
-	although they are logically related.
+	although they are logically related. When checking out a commit, initially the staging area contains a copy of all
+	the files present in that commit.
+	
+How can you use the staging area to make sure you have one commit per logical change?
+
+	This can be done by two verifications. The first one is comparing the working directory with the staging area 
+	through the command 'git diff'. In this way, it's possible to see which files have been modified and choose only
+	those that make a logical change to add to the staging area.
+	The second one is done comparing the staging area with the repository through the command 'git diff --staged'. This
+	allows me to see all the files that were added to the staging area and pinpoint the ones missing or the ones that
+	are not part of this logical change.
+	
+What are some situations when branches would be helpful in keeping your history organized? How would branches help?
+
+	Branches are helpful in situations like bug fixing and adding experimental features or designs, for example. They
+	are helpful because they keep the master branch intact while allowing to easily change from one branch to another 
+	and keep working with them until a merge is necessary.
