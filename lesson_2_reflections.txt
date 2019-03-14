@@ -1,0 +1,12 @@
+What happens when you initialize a repository? Why do you need to do it?
+
+	I guess Git identifies all the files and folder hierarchy existants in the repository folder. Some other 
+	information like timestamps may also be gathered. Since a repository is not just a regular folder, I think this is
+	necessary in order to Git manage multiple repositories and know what files and folder belong to what repository.
+	
+How is the staging area different from the working directory and the repository? What value do you think it offers?
+
+	The staging area is an intermediate place between the working directory and the repository itself. It contains the
+	files present in the working directory that someone wants to commit to the directory. In this way, a commit 
+	contains all the files that represent the logical change. Otherwise, each file would be commited separetely, 
+	although they are logically related.
