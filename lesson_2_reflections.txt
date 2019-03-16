@@ -26,3 +26,21 @@ What are some situations when branches would be helpful in keeping your history 
 	Branches are helpful in situations like bug fixing and adding experimental features or designs, for example. They
 	are helpful because they keep the master branch intact while allowing to easily change from one branch to another 
 	and keep working with them until a merge is necessary.
+	
+How do the diagrams help you visualize the branch structure?
+
+	The diagrams make more intuitive the tree of branches with its correspondent commits in the repository, allowing to
+	see whether there are unreachable nodes and which features are present in each branch (according to the commit 
+	message).
+	
+What is the result of merging two branches together? Why do we represent it in the diagram the way we do?
+
+	The resulting merged node will have all the code modificatins, additions and removals from its parents. Since the
+	resulting node have more then one father node, it will have one arrow per father leaving from it.
+	
+What are the pros and cons of Git’s automatic merging vs. always doing merges manually?
+
+	Automatic merging does part of the programmers' work, making development more efficient. However, it cannot handle 
+	some types of conflicts, since it would be necessary a greal deal of artificial intelligence for it to know how
+	to solve all kinds of conflicts. For those situations, the programmers take control and use their expertise to 
+	figure out how to solve the conflict, avoiding unexpected results that the automation could bring.
